@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resource Hub</title>
+    
+</head>
+<body>
+    <style>
+        /* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+section ul {
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+    <header>
+        <h1>Educational Resource Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Courses</h2>
+            <ul>
+                <li><a href="#">Computer Courses</a></li>
+                <li><a href="#">Course Title 2</a></li>
+                <li><a href="#">Course Title 3</a></li>
+            </ul>
+        </section>
+
+        <section id="tutorials">
+            <h2>Tutorials</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">HTML TUTORIAL</a></li>
+                <li><a href="#">Tutorial Title 2</a></li>
+                <li><a href="#">Tutorial Title 3</a></li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Resource Title 1</a></li>
+                <li><a href="#">Resource Title 2</a></li>
+                <li><a href="#">Resource Title 3</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Educational Resource Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // scripts.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('main section');
+
+    sections.forEach(section => {
+        const heading = section.querySelector('h2');
+        heading.addEventListener('click', function() {
+            section.classList.toggle('expanded');
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Muhib Ali - Home</title>
+	<link rel="icon" type="image/x-icon" href="favicon.jpeg">
+	<style>
+		
+        /* CSS code here */
+
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #333; /* Add background color */
+  padding: 10px; /* Add padding for better visibility */
+  border-radius: 5px; /* Add border radius for a smooth look */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* Add box shadow for depth */
+}
+
+nav li ul li {
+  width: 100%;
+}
+
+nav li ul li a {
+  color: #fff; /* Change text color for better contrast */
+}
+
+#js{
+    background-color: black;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+}
+.btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #444;
+}
+.btn:active {
+	transform: scale(0.95);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+img{
+	width: 215px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  position: relative;
+  color: red;
+}
+
+nav li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+nav li:hover ul {
+  display: block;
+  color: red;
+}
+
+nav li ul li {
+  width: 100%;
+  color: red;
+}
+
+nav a {
+	color: red;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
+section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+section .container{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+	display: flex;
+}
+.project {
+    margin: 0 15px;
+}
+#contact{
+background-color: gray;
+margin-left: 350px;
+margin-right: 350px;
+}
+	</style>
+</head>
+<body>
+	<!-- Navigation Menu -->
+	<nav id="nav">
+		<ul>
+			<li><a href="newpage.html" onclick="alert('This is the home page!')">Home</a></li>
+		  <li><a href="#about">About</a>
+			<ul>
+			  <li><a href="#about/me">Me</a></li>
+			  <li><a href="newpage.html">About us</a></li>
+			</ul>
+		  </li>
+		  <li><a href="#portfolio">Portfolio</a>
+			<ul>
+			  <li><a href="#project1">Project 1</a></li>
+			  <li><a href="#project2">Project 2</a></li>
+			</ul>
+		  </li>
+		  <!-- ... -->
+		</ul>
+	  </nav>
+	  
+	  <!-- ... -->
+	  
+	  
+	  
+	  <!-- Hero Section -->
+	  <center>
+		  
+		  <section id="home" class="hero">
+			  <h1>Welcome to My Website</h1>
+			  <p>Muhib ali is a young web creator</p>
+			  
+			  <button class="btn">Learn More</button>
+			</center>
+		 </section>
+
+	
+		 <!-- About Section -->
+		 <section id="about" class="about" style="background-color: #d3d3d3;">
+			<div class="container">
+				<h2>About Me</h2>
+				<p>Muhib ali is a 12-year-old student at THE CITY school. He is passionate about web development and learning new skills.</p>
+				<a href="https://github.com/muhib1203/muhib1203" target="_blank">My github Account</a>
+			</div>
+			</section>
+			
+			<!-- Portfolio Section -->
+			<section id="portfolio" class="portfolio">
+				<div class="container">
+				<h2>My Pictures</h2>
+				<div class="project-wrap">
+				<div id="project1" class="project">
+					<img src="kids.jpeg" alt="project2">
+				  <!-- Project 1 content -->
+				</div>
+				
+				<div id="project2" class="project">
+				  <img src="boys.jpeg" alt="Project 1" >
+				  <!-- Project 2 content -->
+				</div>
+			</div>
+			</div>
+				
+	</section>
+	
+	<!-- Blog Section -->
+	<section id="blog" class="blog">
+		<h2>My Blog</h2>
+		<ul>
+			<li><h3>Blog Post 1</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+			<li><h3>Blog Post 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+			<li><h3>Blog Post 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+		</ul>
+	</section>
+	
+	<!-- Contact Section -->
+	 <center>
+
+		 <section id="contact" class="contact">
+			 <h2>Get in Touch</h2>
+			 <form action="newpage.html">
+				 <label for="name">Name:</label>
+				 <input type="text" id="name" name="name" placeholder="Enter your Name" ><br><br>
+				 <label for="email">Email:</label>
+				 <input type="email" id="email" name="email" placeholder="Enter your Email" ><br><br>
+				 <label for="message">Message:</label>
+				 <textarea id="message" name="message" placeholder="Any GOOD Message For Us"></textarea><br><br>
+				 
+					 <button  class="btn" type="submit">Send</button>
+	 </center>
+				
+			
+			
+		</form>
+		
+		
+	</section>
+	
+	<!-- Footer -->
+	<footer id="js">
+		<p>&copy; 2024 Muhib Ali. All rights reserved.</p>
+	</footer>
+	
+	<!-- JavaScript code here -->
+	<script>
+		// Add event listeners for navigation menu
+		document.querySelectorAll('#nav a').forEach(function(anchor) {
+			anchor.addEventListener('click', function(event) {
+				event.preventDefault();
+				var sectionId = this.getAttribute('href');
+				scrollToSection(sectionId);
+			});
+		});
+		
+		// Scroll to section function
+		function scrollToSection(sectionId) {
+			var section = document.querySelector(sectionId);
+			section.scrollIntoView({ behavior: 'smooth' });
+		}
+		
+		// Add event listener for learn more button
+		document.querySelector('#btn').addEventListener('click', function() {
+			scrollToSection('#about');
+		});
+		
+		// Add event listener for form submission
+		document.querySelector('#btn').addEventListener('click', function(event) {
+			event.preventDefault();
+			// Form submission logic here
+		});
+		// Alternative way to achieve the same result
+document.querySelector('#nav a[href="#home"]').addEventListener('click', function() {
+  alert('This is the home page!');
+});
+
+	</script>
+</body>
+</html>

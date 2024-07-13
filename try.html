@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="mySelect">
+        <option value=" are below 18">11</option>
+        <option value=" can go">22</option>
+        <option value="are below 18">13</option>
+        
+      </select>
+      <h1 id="selected-option"></h1>
+      <button id="myButton">Click me!</button>
+
+      <script>
+        const mySelect = document.getElementById('mySelect');
+        const selectedOption = document.getElementById('selected-option');
+        const myButton = document.getElementById('myButton');
+        
+        mySelect.addEventListener('change', function(){
+          selectedOption.textContent = `You ]: ${mySelect.value}`;
+        });
+        
+        myButton.addEventListener('click', function(){
+          alert('Chal nikal!');
+        });
+      </script>
+      
+      
+
+      <style>
+       
+}
+      </style>
+</body>
+</html>
